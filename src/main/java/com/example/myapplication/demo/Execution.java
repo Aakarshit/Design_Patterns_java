@@ -1,4 +1,4 @@
-package com.example.myapplication.demo.structuralpatterns.adaptor;
+package com.example.myapplication.demo;
 
 import com.example.myapplication.demo.Service;
 import org.springframework.stereotype.Component;
@@ -10,7 +10,7 @@ public class Execution {
 
     private final List<Service> serviceList;
 
-     Execution(List<Service> serviceList){
+    Execution(List<Service> serviceList){
         this.serviceList=serviceList;
     }
 

@@ -1,7 +1,6 @@
 package com.example.myapplication.demo;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -14,8 +13,12 @@ import javax.annotation.PostConstruct;
 public class DesignPatternDemoApplication {
 
 
-    @Autowired
-    Execution execution;
+
+    private final Execution execution;
+
+    public DesignPatternDemoApplication(Execution execution) {
+        this.execution = execution;
+    }
 
     @PostConstruct
     public void start(){

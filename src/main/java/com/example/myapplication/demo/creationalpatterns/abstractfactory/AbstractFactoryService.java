@@ -14,13 +14,13 @@ public class AbstractFactoryService extends Service {
     @Override
     public void process() {
 
-        CarFactory buggatiFactory = new BuggatiFactory();
+        AbstractCarFactory buggatiFactory = new BuggatiFactory();
         Tyre buggatiTyre = buggatiFactory.createTyre();
         SideMirror buggatiSideMirror=buggatiFactory.createMirror();
         buggatiTyre.speed();
         buggatiSideMirror.RefractiveIndex();
 
-        CarFactory ferrariFactory = new FerrariFactory();
+        AbstractCarFactory ferrariFactory = new FerrariFactory();
         Tyre ferrariTyre = ferrariFactory.createTyre();
         SideMirror ferrariFactoryMirror = ferrariFactory.createMirror();
         ferrariTyre.speed();

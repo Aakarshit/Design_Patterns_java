@@ -1,6 +1,6 @@
 package com.example.myapplication.demo.creationalpatterns.abstractfactory;
 
-public interface CarFactory {
+public interface AbstractCarFactory {
     Tyre createTyre();
     SideMirror createMirror();
 }

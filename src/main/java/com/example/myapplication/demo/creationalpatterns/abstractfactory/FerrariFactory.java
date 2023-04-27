@@ -3,7 +3,7 @@ package com.example.myapplication.demo.creationalpatterns.abstractfactory;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FerrariFactory implements CarFactory{
+public class FerrariFactory implements AbstractCarFactory{
     @Override
     public Tyre createTyre() {
         return new FerraiTyre();

@@ -1,6 +1,6 @@
 package com.example.myapplication.demo.creationalpatterns.factorypattern;
 
-public class MarutiFactory extends CarFactory{
+public class MarutiFactory implements CarFactory{
 
     @Override
     public Car createCar(int doors) {

@@ -13,17 +13,19 @@ public class AbstractFactoryService extends Service {
     }
     @Override
     public void process() {
-        CarFactory carFactory;
-        carFactory = getFactory("Buggati");
-        Tyre t=carFactory.createTyre();
-        SideMirror sm=carFactory.createMirror();
-        t.speed();
-        sm.RefractiveIndex();
-    }
-    CarFactory getFactory(String str){
-        return str.equalsIgnoreCase("Ferrari") ? new FerrariFactory() : new BuggatiFactory();
-    }
 
+        CarFactory buggatiFactory = new BuggatiFactory();
+        Tyre buggatiTyre = buggatiFactory.createTyre();
+        SideMirror buggatiSideMirror=buggatiFactory.createMirror();
+        buggatiTyre.speed();
+        buggatiSideMirror.RefractiveIndex();
+
+        CarFactory ferrariFactory = new FerrariFactory();
+        Tyre ferrariTyre = ferrariFactory.createTyre();
+        SideMirror ferrariFactoryMirror = ferrariFactory.createMirror();
+        ferrariTyre.speed();
+        ferrariFactoryMirror.RefractiveIndex();
+    }
 
     @Override
     public int getOrder() {

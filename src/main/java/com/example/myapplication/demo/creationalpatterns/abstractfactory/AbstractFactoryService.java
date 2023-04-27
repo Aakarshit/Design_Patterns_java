@@ -1,4 +1,4 @@
-package com.example.myapplication.demo.structuralpatterns.abstractfactory;
+package com.example.myapplication.demo.creationalpatterns.abstractfactory;
 
 import com.example.myapplication.demo.Service;
 import lombok.extern.slf4j.Slf4j;

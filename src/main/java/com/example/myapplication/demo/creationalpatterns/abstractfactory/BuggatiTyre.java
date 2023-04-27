@@ -1,4 +1,4 @@
-package com.example.myapplication.demo.structuralpatterns.abstractfactory;
+package com.example.myapplication.demo.creationalpatterns.abstractfactory;
 
 import org.springframework.stereotype.Component;
 

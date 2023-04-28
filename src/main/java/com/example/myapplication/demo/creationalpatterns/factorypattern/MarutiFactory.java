@@ -4,7 +4,7 @@ public class MarutiFactory implements CarFactory{
 
     @Override
     public Car createCar(int doors) {
-        if(doors==2){
+        if(doors==3){
             return new Jimny();
         }else if(doors==4){
             return new GrandVitara();

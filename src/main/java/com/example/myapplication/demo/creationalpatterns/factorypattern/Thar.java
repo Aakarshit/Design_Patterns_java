@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 public class Thar implements Car{
     @Override
     public Integer getDoors() {
-        return 2;
+        return 3;
     }
 
     @Override

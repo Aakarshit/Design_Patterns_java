@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component;
 public class FactoryPatternService extends Service {
     @Override
     public void process() {
-        MahindraFactory mahindraFactory=new MahindraFactory();
+        CarFactory mahindraFactory=new MahindraFactory();
         Car car=mahindraFactory.createCar(4);
         log.info("Car details : "+ car.getCarInfo());
         log.info("Car doors : "+ car.getDoors().toString());
 
-        MarutiFactory marutiFactory=new MarutiFactory();
+        CarFactory marutiFactory=new MarutiFactory();
 
         Car car1=marutiFactory.createCar(2);
         log.info("Car details : "+ car1.getCarInfo());

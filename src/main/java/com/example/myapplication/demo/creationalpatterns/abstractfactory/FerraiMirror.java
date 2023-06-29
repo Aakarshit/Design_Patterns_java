@@ -1,11 +1,12 @@
 package com.example.myapplication.demo.creationalpatterns.abstractfactory;
 
-import org.springframework.stereotype.Component;
 
-@Component
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class FerraiMirror implements SideMirror{
     @Override
     public void RefractiveIndex() {
-        System.out.println("Ferrai RI is 3.57");
+        log.info("Ferrai RI is 3.57");
     }
 }

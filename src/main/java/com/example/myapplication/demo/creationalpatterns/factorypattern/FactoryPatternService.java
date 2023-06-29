@@ -16,7 +16,7 @@ public class FactoryPatternService extends Service {
 
         CarFactory marutiFactory=new MarutiFactory();
 
-        Car car1=marutiFactory.createCar(2);
+        Car car1=marutiFactory.createCar(3);
         log.info("Car details : "+ car1.getCarInfo());
         log.info("Car doors : "+ car1.getDoors().toString());
     }

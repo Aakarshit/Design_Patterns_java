@@ -1,11 +1,12 @@
 package com.example.myapplication.demo.creationalpatterns.abstractfactory;
 
-import org.springframework.stereotype.Component;
 
-@Component
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class BuggatiMirror implements SideMirror{
     @Override
     public void RefractiveIndex() {
-        System.out.println("Buggati refractive index is 6.58");
+        log.info("Buggati refractive index is 6.58");
     }
 }

@@ -10,6 +10,4 @@ public class Pizza {
     String dough;
     String topping;
     String sauce;
-
-
 }

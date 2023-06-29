@@ -1,11 +1,12 @@
 package com.example.myapplication.demo.creationalpatterns.abstractfactory;
 
-import org.springframework.stereotype.Component;
 
-@Component
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class BuggatiTyre implements Tyre{
     @Override
     public void speed() {
-        System.out.println("Buggati top speed is 450kmph");
+        log.info("Buggati top speed is 450kmph");
     }
 }

@@ -2,17 +2,20 @@ package com.example.myapplication.demo.creationalpatterns.builderpattern;
 
 public class SpicyPizzaBuilder extends PizzaBuilder{
     @Override
-    public void buildDough() {
+    public SpicyPizzaBuilder buildDough() {
         pizza.setDough("pan baked");
+        return this;
     }
 
     @Override
-    public void buildSauce() {
+    public SpicyPizzaBuilder buildSauce() {
         pizza.setSauce("hot");
+        return this;
     }
 
     @Override
-    public void buildTopping() {
+    public SpicyPizzaBuilder buildTopping() {
         pizza.setTopping("pepperoni and salami");
+        return this;
     }
 }

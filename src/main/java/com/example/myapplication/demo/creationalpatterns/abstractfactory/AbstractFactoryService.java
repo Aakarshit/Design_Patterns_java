@@ -1,30 +1,23 @@
 package com.example.myapplication.demo.creationalpatterns.abstractfactory;
 
 import com.example.myapplication.demo.Service;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
+@RequiredArgsConstructor
 public class AbstractFactoryService extends Service {
 
-    public AbstractFactoryService(){
-        log.info("Entered Abstract factory service");
-    }
+
+    private final CarFactory carFactory;
+
     @Override
     public void process() {
-
-        AbstractCarFactory buggatiFactory = new BuggatiFactory();
-        Tyre buggatiTyre = buggatiFactory.createTyre();
-        SideMirror buggatiSideMirror=buggatiFactory.createMirror();
-        buggatiTyre.speed();
-        buggatiSideMirror.RefractiveIndex();
-
-        AbstractCarFactory ferrariFactory = new FerrariFactory();
-        Tyre ferrariTyre = ferrariFactory.createTyre();
-        SideMirror ferrariFactoryMirror = ferrariFactory.createMirror();
-        ferrariTyre.speed();
-        ferrariFactoryMirror.RefractiveIndex();
+        FerrariFactory ferrariFactory = (FerrariFactory) carFactory.getInstance("FerrariFactory");
+        SideMirror ferrariMirror = ferrariFactory.createMirror();
+        ferrariMirror.RefractiveIndex();
     }
 
     @Override

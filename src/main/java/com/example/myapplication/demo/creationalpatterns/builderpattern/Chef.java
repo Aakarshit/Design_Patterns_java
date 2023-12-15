@@ -1,6 +1,6 @@
 package com.example.myapplication.demo.creationalpatterns.builderpattern;
 
-public class Waiter {
+public class Chef {
     private PizzaBuilder pizzaBuilder;
 
     public void setPizzaBuilder(PizzaBuilder pizzaBuilder){
@@ -14,4 +14,5 @@ public class Waiter {
     public void constructPizza() {
         pizzaBuilder.createNewPizza().buildDough().buildSauce().buildTopping();
     }
+
 }

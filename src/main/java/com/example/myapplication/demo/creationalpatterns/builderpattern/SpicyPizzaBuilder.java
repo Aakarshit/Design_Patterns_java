@@ -14,8 +14,7 @@ public class SpicyPizzaBuilder extends PizzaBuilder{
     }
 
     @Override
-    public SpicyPizzaBuilder buildTopping() {
+    public void buildTopping() {
         pizza.setTopping("pepperoni and salami");
-        return this;
     }
 }

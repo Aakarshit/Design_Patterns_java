@@ -15,8 +15,7 @@ public class HawaiianPizzaBuilder extends PizzaBuilder{
     }
 
     @Override
-    public HawaiianPizzaBuilder buildTopping() {
+    public void buildTopping() {
         pizza.setTopping("ham and pineapple");
-        return this;
     }
 }

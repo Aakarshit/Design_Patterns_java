@@ -1,7 +1,10 @@
 package com.example.myapplication.demo.creationalpatterns.abstractfactory;
 
 
-public class FerrariFactory implements AbstractCarFactory{
+import org.springframework.stereotype.Component;
+
+@Component
+public class FerrariFactory implements AbstractCarFactory {
     @Override
     public Tyre createTyre() {
         return new FerraiTyre();
@@ -10,5 +13,10 @@ public class FerrariFactory implements AbstractCarFactory{
     @Override
     public SideMirror createMirror() {
         return new FerraiMirror();
+    }
+
+    @Override
+    public String name() {
+        return "FerrariFactory";
     }
 }

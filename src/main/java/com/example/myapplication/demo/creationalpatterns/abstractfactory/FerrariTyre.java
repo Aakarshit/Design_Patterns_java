@@ -4,7 +4,7 @@ package com.example.myapplication.demo.creationalpatterns.abstractfactory;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class FerraiTyre implements Tyre{
+public class FerrariTyre implements Tyre{
 
     @Override
     public void speed() {

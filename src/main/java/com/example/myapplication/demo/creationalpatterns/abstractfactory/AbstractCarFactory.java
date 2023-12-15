@@ -1,6 +1,11 @@
 package com.example.myapplication.demo.creationalpatterns.abstractfactory;
 
-public interface AbstractCarFactory {
+import java.io.Serializable;
+
+public interface AbstractCarFactory extends NamedService, Serializable {
+
     Tyre createTyre();
+
     SideMirror createMirror();
+    String name();
 }

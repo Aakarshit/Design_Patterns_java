@@ -1,8 +1,10 @@
 package com.example.myapplication.demo.creationalpatterns.abstractfactory;
 
 
+import org.springframework.stereotype.Component;
 
-public class BuggatiFactory implements AbstractCarFactory{
+@Component
+public class BuggatiFactory implements AbstractCarFactory {
     @Override
     public Tyre createTyre() {
         return new BuggatiTyre();
@@ -11,5 +13,10 @@ public class BuggatiFactory implements AbstractCarFactory{
     @Override
     public SideMirror createMirror() {
         return new BuggatiMirror();
+    }
+
+    @Override
+    public String name() {
+        return "BuggatiFactory";
     }
 }

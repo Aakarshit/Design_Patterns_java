@@ -7,12 +7,12 @@ import org.springframework.stereotype.Component;
 public class FerrariFactory implements AbstractCarFactory {
     @Override
     public Tyre createTyre() {
-        return new FerraiTyre();
+        return new FerrariTyre();
     }
 
     @Override
     public SideMirror createMirror() {
-        return new FerraiMirror();
+        return new FerrariMirror();
     }
 
     @Override
